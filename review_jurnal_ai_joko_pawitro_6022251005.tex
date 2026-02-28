@@ -52,8 +52,7 @@
     NRP: & 6022251005\\
     Teacher: & Muhammad Qomaruz Zaman, S.T., M.T., Ph.D.\\
     Class name: & Kecerdasan Artifisial\\
-    YouTube video link: & -\\
-    GitHub link: & -
+    GitHub repo link: & \href{https://github.com/jpawitro/reb_2025_2026_genap_EE255271_kecerdasan_buatan_tugas_01}{Repo Tugas AI}
 \end{tabular}
 \vspace{0.8cm}
 
@@ -66,9 +65,23 @@
 \end{itemize}
 
 \section*{Ringkasan Jurnal}
-Artikel ini meninjau perkembangan pemanfaatan AI untuk engineering design selama 15 tahun terakhir. Fokus utamanya adalah memetakan metode AI (machine learning, deep learning, artificial neural network, fuzzy logic, expert systems, genetic algorithm) terhadap tahap proses desain, yaitu inspirasi, ideasi, evaluasi, optimasi, pengambilan keputusan, dan pemodelan \cite{yuksel2023review}. Berdasarkan hasil review, tren terbaru menunjukkan peningkatan kuat pada pendekatan data-driven, penggunaan deep learning, dan kebutuhan explainable artificial intelligence (XAI).
+Artikel ini merupakan survey paper yang meninjau perkembangan aplikasi AI pada engineering design dalam rentang 15 tahun (2006--2021) \cite{yuksel2023review}. Penulis menempatkan AI sebagai enabler untuk menghadapi masalah desain yang ambigu, multi-parameter, dan sulit diselesaikan dengan pendekatan tradisional. Nilai utama artikel bukan hanya daftar aplikasi, tetapi kerangka klasifikasi yang menghubungkan \textit{metode AI}, \textit{tahap proses desain}, serta \textit{konteks kebutuhan desainer}.
 
-Kekuatan artikel ini adalah penyajian peta yang cukup komprehensif dari sisi metode, aplikasi, serta kecenderungan publikasi dari waktu ke waktu. Selain itu, penulis menyusun alur pemilihan metode AI dua tingkat untuk membantu desainer memilih pendekatan yang lebih tepat berdasarkan ketersediaan data, jenis masalah, dan kebutuhan hasil.
+Secara metodologis, literatur dikumpulkan secara sistematis dari database besar (Scopus dan Web of Science), lalu disaring berdasarkan relevansi topik engineering design. Setelah proses seleksi, studi dipetakan dengan pertanyaan kunci: masalah desain apa yang diselesaikan, teknik AI apa yang dipakai, mengapa teknik itu dipilih, dan hasil apa yang diperoleh. Pendekatan ini membuat pembaca dapat melihat bukan hanya \textit{apa} yang populer, tetapi juga \textit{mengapa} metode tertentu lebih cocok untuk kasus tertentu.
+
+Dari sisi konten, artikel mengulas kelompok metode berikut:
+\begin{itemize}
+    \item \textbf{Machine Learning (ML)} untuk klasifikasi, prediksi, evaluasi, dan decision support berbasis data.
+    \item \textbf{Artificial Neural Networks (ANN) dan Deep Learning (DL)} untuk masalah kompleks, termasuk pemrosesan citra, generative design, serta transformasi 2D--3D/3D--3D pada konteks desain.
+    \item \textbf{Fuzzy Logic dan Expert Systems} untuk kasus dengan ketidakpastian tinggi, data terbatas, atau kebutuhan interpretabilitas yang kuat.
+    \item \textbf{Genetic Algorithm dan metode evolusioner/hibrida} untuk optimasi desain, eksplorasi alternatif solusi, serta pencarian konfigurasi mendekati optimum global.
+\end{itemize}
+
+Salah satu temuan menarik adalah pergeseran fokus publikasi: jika pada periode awal dominan pada evaluasi, optimasi, dan decision-making, maka pada periode terbaru terjadi peningkatan pada inspirasi, ideasi, dan modelling berbasis data. Ini menunjukkan AI bergerak dari sekadar alat evaluasi menjadi \textit{co-creator} pada fase awal proses desain.
+
+Artikel juga menekankan tren \textit{hybrid AI}, yaitu penggabungan beberapa metode untuk meningkatkan performa solusi pada kasus nyata. Sebagai keluaran praktis, penulis menyajikan flowchart pemilihan metode AI dua tingkat berdasarkan ketersediaan data, tipe masalah, dan target penggunaan. Bagi praktisi engineering yang tidak berlatar belakang AI murni, bagian ini sangat bermanfaat sebagai panduan implementasi awal.
+
+Selain itu, penulis menyoroti pentingnya Explainable AI (XAI). Dalam konteks engineering, model yang akurat tetapi tidak dapat dijelaskan berisiko sulit diterima untuk keputusan berkonsekuensi tinggi. Karena itu, artikel memposisikan XAI bukan sebagai fitur tambahan, melainkan syarat penting untuk peningkatan trust, auditability, dan adopsi industrial.
 
 \section*{Ulasan Kritis}
 \subsection*{Kekuatan}
@@ -85,13 +98,15 @@ Kekuatan artikel ini adalah penyajian peta yang cukup komprehensif dari sisi met
     \item \textbf{Konteks sektor infrastruktur kritis masih terbatas}. Aspek reliability, lifecycle risk, dan konsekuensi kegagalan aset bernilai tinggi belum dieksplorasi secara rinci.
 \end{enumerate}
 
-\section*{Refleksi Personal Berdasarkan Latar Belakang Saya}
-Dari sudut pandang saya, jurnal ini sangat relevan dengan perjalanan profesional saya yang bergerak dari asset integrity, data science, hingga saat ini berada di domain high-voltage cable engineering. Di fase awal karier, saya banyak bekerja dengan pendekatan rule-based dan standard-based (API, ASME, DNV, ISO 55001). Ketika masuk ke smart metering, IoT, dan analitik jaringan listrik, saya beralih ke pendekatan data-driven untuk forecasting, anomaly detection, dan evaluasi reliability.
+\section*{Keterkaitan dengan Peran Profesional}
+Konteks jurnal ini sangat sesuai dengan peran penulis sebagai Cable Specialist pada sistem kabel offshore wind. Ruang lingkup peran tidak terbatas pada satu aktivitas, melainkan mencakup engineering lifecycle secara lebih luas: tahap desain (design validation, review asumsi teknis, dan penguatan metodologi), condition monitoring, penilaian kondisi operasional, dukungan analisis remaining life, serta input teknis untuk keputusan operasi dan keandalan aset.
 
-Dalam pekerjaan saya saat ini, saya melihat langsung bahwa tidak ada satu metode AI yang cocok untuk semua masalah. Model berbasis data memang memberi kecepatan dan skalabilitas, tetapi keputusan engineering pada aset kritis tetap membutuhkan interpretabilitas, jejak alasan teknis, dan validasi domain. Karena itu, gagasan jurnal tentang kombinasi metode AI dan peningkatan explainability menurut saya sangat tepat.
+Salah satu fokus pengembangan saat ini adalah \textit{cable exposure detection} berbasis AI/data-driven untuk kebutuhan fase operasional. Tujuannya adalah meningkatkan deteksi dini kondisi risiko, memperbaiki kualitas evaluasi teknis, dan mendukung keputusan mitigasi yang lebih cepat. Pada level strategis, pendekatan ini relevan untuk \textit{life extension} karena menyediakan evidence operasional yang lebih kuat untuk evaluasi keberlanjutan aset.
 
-\section*{Implikasi untuk Pengembangan Saya}
-Artikel ini memperkuat arah pengembangan akademik dan profesional saya:
+Selain itu, pada kasus AWS--Ørsted terkait seabed thermal properties, penekanannya berada pada pemanfaatan AI/ML untuk \textit{improve design methodology}, khususnya pada estimasi parameter seabed dan peningkatan kualitas dasar perhitungan desain \cite{awsorsted2024seabed}. Dalam konteks tersebut, kontribusi penulis berada pada sisi SME dan pemanfaatan hasil untuk engineering decision, bukan pada aktivitas modeling inti.
+
+\section*{Implikasi untuk Pengembangan Lanjutan}
+Artikel ini memperkuat arah pengembangan akademik dan profesional penulis:
 \begin{itemize}
     \item Mengembangkan pipeline AI yang menyeimbangkan performa model, explainability, dan engineering validity.
     \item Mengutamakan pendekatan hybrid (AI + physics/engineering constraints) untuk kasus aset energi.
@@ -100,7 +115,7 @@ Artikel ini memperkuat arah pengembangan akademik dan profesional saya:
 \end{itemize}
 
 \section*{Kesimpulan}
-Secara keseluruhan, jurnal ini memberikan peta yang jelas dan relevan tentang evolusi aplikasi AI di engineering design. Nilai tambah utamanya bukan hanya pada pemetaan metode, tetapi juga pada arahan praktis pemilihan metode sesuai konteks masalah. Bagi saya pribadi, artikel ini menegaskan bahwa masa depan engineering design akan semakin data-informed, namun tetap harus ditopang oleh penalaran engineering yang kuat dan dapat dipertanggungjawabkan.
+Secara keseluruhan, jurnal ini memberikan peta yang jelas dan relevan tentang evolusi aplikasi AI di engineering design. Nilai tambah utamanya bukan hanya pada pemetaan metode, tetapi juga pada arahan praktis pemilihan metode sesuai konteks masalah. Dalam konteks tugas ini, arah ke depan engineering design semakin data-informed, namun tetap harus ditopang oleh penalaran engineering yang kuat dan dapat dipertanggungjawabkan.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
