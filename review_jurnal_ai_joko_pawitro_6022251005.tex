@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{datetime2}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{fancyhdr}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+\setlength{\headheight}{37pt}
+
+\title{Review Jurnal: Aplikasi Artificial Intelligence dalam Perspektif Engineering Design}
+\date{\today}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[R]{}
+    \fancyfoot[L]{}
+    \fancyhead[L]{\includegraphics[width=2cm]{ITS_pojok.pdf}}
+    \fancyhead[R]{\DTMnow}
+}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 1em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    \vskip 1em%
+  \end{center}%
+  \par
+  \vskip 1em}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+\noindent\begin{tabular}{@{}ll}
+    Author(s): & Joko Pawitro\\
+    NRP: & 6022251005\\
+    Teacher: & Muhammad Qomaruz Zaman, S.T., M.T., Ph.D.\\
+    Class name: & Kecerdasan Artifisial\\
+    YouTube video link: & -\\
+    GitHub link: & -
+\end{tabular}
+\vspace{0.8cm}
+
+\section*{Identitas Jurnal}
+\begin{itemize}
+    \item \textbf{Judul}: \textit{Review of artificial intelligence applications in engineering design perspective}
+    \item \textbf{Penulis}: Nurullah Yuksel, Huseyin Riza Borklu, Huseyin Kursad Sezer, Olcay Ersel Canyurt
+    \item \textbf{Jurnal}: \textit{Engineering Applications of Artificial Intelligence}, Vol. 118, 2023, Article 105697
+    \item \textbf{Jenis artikel}: Survey paper (review literatur)
+\end{itemize}
+
+\section*{Ringkasan Jurnal}
+Artikel ini meninjau perkembangan pemanfaatan AI untuk engineering design selama 15 tahun terakhir. Fokus utamanya adalah memetakan metode AI (machine learning, deep learning, artificial neural network, fuzzy logic, expert systems, genetic algorithm) terhadap tahap proses desain, yaitu inspirasi, ideasi, evaluasi, optimasi, pengambilan keputusan, dan pemodelan \cite{yuksel2023review}. Berdasarkan hasil review, tren terbaru menunjukkan peningkatan kuat pada pendekatan data-driven, penggunaan deep learning, dan kebutuhan explainable artificial intelligence (XAI).
+
+Kekuatan artikel ini adalah penyajian peta yang cukup komprehensif dari sisi metode, aplikasi, serta kecenderungan publikasi dari waktu ke waktu. Selain itu, penulis menyusun alur pemilihan metode AI dua tingkat untuk membantu desainer memilih pendekatan yang lebih tepat berdasarkan ketersediaan data, jenis masalah, dan kebutuhan hasil.
+
+\section*{Ulasan Kritis}
+\subsection*{Kekuatan}
+\begin{enumerate}
+    \item \textbf{Struktur review sistematis}. Artikel menyambungkan jenis metode AI dengan kebutuhan riil pada tiap tahap engineering design.
+    \item \textbf{Orientasi praktis}. Flowchart pemilihan metode AI bermanfaat sebagai titik awal pengambilan keputusan teknis.
+    \item \textbf{Sesuai tren industri}. Penekanan pada hybrid AI methods, data-driven design, dan XAI sangat relevan dengan praktik saat ini.
+\end{enumerate}
+
+\subsection*{Keterbatasan}
+\begin{enumerate}
+    \item \textbf{Masih dominan konseptual}. Artikel belum banyak menurunkan rekomendasi ke metrik implementasi kuantitatif (misalnya target performa minimum atau biaya komputasi).
+    \item \textbf{Pembahasan tata kelola data belum mendalam}. Dalam implementasi industri, kualitas data, integrasi sistem, dan governance sering menjadi bottleneck utama.
+    \item \textbf{Konteks sektor infrastruktur kritis masih terbatas}. Aspek reliability, lifecycle risk, dan konsekuensi kegagalan aset bernilai tinggi belum dieksplorasi secara rinci.
+\end{enumerate}
+
+\section*{Refleksi Personal Berdasarkan Latar Belakang Saya}
+Dari sudut pandang saya, jurnal ini sangat relevan dengan perjalanan profesional saya yang bergerak dari asset integrity, data science, hingga saat ini berada di domain high-voltage cable engineering. Di fase awal karier, saya banyak bekerja dengan pendekatan rule-based dan standard-based (API, ASME, DNV, ISO 55001). Ketika masuk ke smart metering, IoT, dan analitik jaringan listrik, saya beralih ke pendekatan data-driven untuk forecasting, anomaly detection, dan evaluasi reliability.
+
+Dalam pekerjaan saya saat ini, saya melihat langsung bahwa tidak ada satu metode AI yang cocok untuk semua masalah. Model berbasis data memang memberi kecepatan dan skalabilitas, tetapi keputusan engineering pada aset kritis tetap membutuhkan interpretabilitas, jejak alasan teknis, dan validasi domain. Karena itu, gagasan jurnal tentang kombinasi metode AI dan peningkatan explainability menurut saya sangat tepat.
+
+\section*{Implikasi untuk Pengembangan Saya}
+Artikel ini memperkuat arah pengembangan akademik dan profesional saya:
+\begin{itemize}
+    \item Mengembangkan pipeline AI yang menyeimbangkan performa model, explainability, dan engineering validity.
+    \item Mengutamakan pendekatan hybrid (AI + physics/engineering constraints) untuk kasus aset energi.
+    \item Memperkuat data governance dan quality assurance sebagai fondasi implementasi AI yang andal.
+    \item Menjadikan insight artikel sebagai referensi untuk riset lanjutan pada studi Magister Sustainable Electrical Engineering.
+\end{itemize}
+
+\section*{Kesimpulan}
+Secara keseluruhan, jurnal ini memberikan peta yang jelas dan relevan tentang evolusi aplikasi AI di engineering design. Nilai tambah utamanya bukan hanya pada pemetaan metode, tetapi juga pada arahan praktis pemilihan metode sesuai konteks masalah. Bagi saya pribadi, artikel ini menegaskan bahwa masa depan engineering design akan semakin data-informed, namun tetap harus ditopang oleh penalaran engineering yang kuat dan dapat dipertanggungjawabkan.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+
+# macOS metadata
+.DS_Store
+
+# Symlinked folders inside references (do not include in repo)
+references/template
+references/plans
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
